@@ -3,29 +3,58 @@
 <html>
 <head>
   <title>Rock Paper Scissors</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/reset.css" />
+  <link rel="stylesheet" type="text/css" href="assets/style.css" />
 </head>
 <body>
-  <div id="container">
-  	<h3>Choose Rock, Paper, Scissors.</h3>
-    <button id="rock">Rock</button>
-    <button id="paper">Paper</button>
-    <button id="scissors">Scissors</button>
+  <div class="wrapper">
+
+    <div class="wave wave-top">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #85A67C;"></path>
+      </svg>
+    </div>
+<!--     <div class="wave wave-left">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #85A67C;"></path>
+      </svg>
+    </div>
+    <div class="wave wave-right">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #85A67C;"></path>
+      </svg>
+    </div> -->
+
+    <h3 class="colored">Let's play!!</h3>
+    <div id="container" class="container">
+      <button id="rock">Rock</button>
+      <button id="paper">Paper</button>
+      <button id="scissors">Scissors</button>
+    </div>
+    <div id="player">
+      <h4>Player score:</h4>
+      <p id="pscore">0</p>
+    </div>
+    <div id="computer">
+      <h4>Computer score:</h4>
+      <p id="cscore">0</p>
+      <p id="compChoice">Computer Choice:</p>
+      <p id="results">Round result</p>
+    </div>
+    <div class="endtext">
+      <p id="congrats"></p>
+      <p id="maybe"></p>
+    </div>
     <button id="reset">Reset score</button>
+    <div class="wave wave-btm">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #85A67C;"></path>
+      </svg>
+    </div>
   </div>
-  <div id="player">
-    <h4>Player score:</h4>
-    <p id="pscore">0</p>
-  </div>
-  <div id="computer">
-    <h4>Computer score:</h4>
-    <p id="cscore">0</p>
-    <p id="compChoice">Computer Choice:</p>
-    <p id="results">Round result</p>
-  </div>
-  <div class="endtext">
-    <p id="congrats"></p>
-    <p id="maybe"></p>
-  </div>
-  <script src="script.js"></script>
+  
+  <script src="assets/script.js"></script>
 </body>
 </html>

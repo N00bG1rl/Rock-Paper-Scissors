@@ -30,7 +30,7 @@ btn.addEventListener("click", (e) => {
   maybeText.textContent = "";
 });
 // Random computer choice
-function getComputerSelection() { 
+function getComputerSelection() {
   let computerChoice = ["Rock", "Paper", "Scissors"];
     return computerChoice[Math.floor(Math.random()*computerChoice.length)];
   };
@@ -84,7 +84,7 @@ function score(roundWinner) {
 }
 };
 // Player selection
-rock.addEventListener('click', (e) =>{ 
+rock.addEventListener('click', (e) =>{
   playerSelection = "Rock";
   computerSelection = getComputerSelection();
   compChoice.textContent = `Computer Chooses ${(computerSelection)}`;
