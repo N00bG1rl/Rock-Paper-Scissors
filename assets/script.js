@@ -11,7 +11,6 @@ let playerScore = document.getElementById("pscore");
 let computerScore = document.getElementById("cscore");
 let resultText = document.getElementById("results");
 
-
 let congratsText = document.getElementById("congrats");
 let maybeText = document.getElementById("maybe");
 let compChoice = document.getElementById("compChoice");
