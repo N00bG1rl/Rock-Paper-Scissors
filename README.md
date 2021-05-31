@@ -1,3 +1,13 @@
-Odin Project: Rock Paper Scissors https://www.theodinproject.com/courses/web-development-101/lessons/rock-paper-scissors
+# Rock Paper Scissors game
 
-View on browser: https://n00bg1rl.github.io/rps/
+## Project is created with
+* JavaScript
+* HTML
+* CSS
+
+## Created at
+May 02, 2018
+
+## [View on browser](https://n00bg1rl.github.io/rps/)
+
+![github](./assets/images/github.png)

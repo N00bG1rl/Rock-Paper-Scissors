@@ -36,28 +36,40 @@ body {
 .wrapper {
   width: 600px;
   margin: 60px auto;
+  color: #fd1d1d;
   text-align: center;
-  overflow: auto;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
   background-color: #fff;
+  overflow: auto;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .container {
   text-align: center;
 }
 h1 {
-  font-size: 45px;
+  font-size: 60px;
   font-family: 'Sigmar One', cursive;
-  text-align: center;
-  font-weight: 600;
-  color: #fd1d1d;
+  color: #23d5ab;
   letter-spacing: 2px;
   padding: 20px;
+  margin: 0;
+}
+h3 {
+  color: #23a6d5;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+h5 {
+  margin: 0;
 }
 button {
   font-size: 17px;
   padding: 15px 25px;
   margin: 10px;
-  font-weight: 600;
   color: #fff;
   text-transform: uppercase;
   background: rgb(238,119,82);
@@ -72,25 +84,39 @@ button:hover {
   background: linear-gradient(15deg, rgba(242,242,242,1) 0%, rgba(255,255,255,1) 50%, rgba(250,250,250,1) 100%);
 }
 .result {
-  text-align: center;
   margin: 60px;
 }
 .player,
 .computer {
   width: 50%;
   float: left;
-  text-align: center;
   margin: 20px 0;
+}
+.player p,
+.computer p {
+  font-family: 'Sigmar One', cursive;
+  color: #23d5ab;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 0;
 }
 .clearBoth {
   clear: both;
 }
-.score p {
+.score p,
+.score span {
   display: inline-block;
+  color: #23d5ab;
+  font-size: 40px;
+  padding: 40px;
+  margin: 0;
 }
 .endText {
-  height: 100px;
 }
 .resetBtn {
   margin: 20px;
+}
+.resetBtn button {
+  padding: 5px 15px;
+  font-size: 13px;
 }

@@ -62,11 +62,11 @@ function playRound(playerSelection, computerSelection) {
 function score(roundWinner) {
   if (roundWinner === "player") {
     playerScore.textContent = playerScoreCount;
-    resultText.textContent = `${(playerSelection)} beats ${(computerSelection)}! Player wins round!`;
+    resultText.textContent = `${(playerSelection)} beats ${(computerSelection)}! You win this round!`;
   }
   else if (roundWinner === "computer") {
     computerScore.textContent = computerScoreCount;
-    resultText.textContent = `${(computerSelection)} beats ${(playerSelection)}! Computer wins round!`;
+    resultText.textContent = `${(computerSelection)} beats ${(playerSelection)}! Computer win this round!`;
   }
   else if (roundWinner === "tie")
     resultText.textContent = "Ohh, noo! It's a tie. Play again.";
@@ -77,12 +77,12 @@ function score(roundWinner) {
   if(finalWinner !== "player" && finalWinner !== "computer"){
     if (playerScoreCount === 5 ){
       finalWinner = "player";
-      congratsText.textContent = "Congratulations, you just won the game!";
-      maybeText.textContent = "Feel free to keep playing.";
+      congratsText.textContent = "Congratulations, you won!!";
+      maybeText.textContent = "Play another round!";
     } else if(computerScoreCount === 5){
       finalWinner = "computer";
       congratsText.textContent = "Sorry, Computer beat you :(";
-      maybeText.textContent = "Feel free to keep playing.";
+      maybeText.textContent = "Play another round!";
     }
   }
 };
