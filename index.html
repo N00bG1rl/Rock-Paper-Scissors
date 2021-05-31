@@ -2,48 +2,46 @@
  <meta charset="UTF-8"> 
 <html>
 <head>
-  <title>Rock Paper Scissors</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet" /> 
 
-  <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="assets/reset.css" />
   <link rel="stylesheet" type="text/css" href="assets/style.css" />
+
+  <title>Rock-Paper-Scissors Game</title>
 </head>
 <body>
   <div class="wrapper">
-
-    <div class="wave wave-top">
-      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-        <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #85A67C;"></path>
-      </svg>
-    </div>
-    <h3 class="colored">Let's play!!</h3>
+    <h1>Let's play!!</h1>
     <div id="container" class="container">
       <button id="rock">Rock</button>
       <button id="paper">Paper</button>
       <button id="scissors">Scissors</button>
     </div>
-    <div id="player">
-      <h4>Player score:</h4>
-      <p id="pscore">0</p>
+    <div id="player" class="player">
+      <h3>Your choice:</h3>
+      <p id="playerChoice"></p>
     </div>
-    <div id="computer">
-      <h4>Computer score:</h4>
-      <p id="cscore">0</p>
-      <p id="compChoice">Computer Choice:</p>
-      <p id="results">Round result</p>
+    <div id="computer" class="computer">
+      <h3>Computer choice:</h3>
+      <p id="compChoice"></p>
     </div>
-    <div class="endtext">
+    <br class="clearBoth">
+    <div class="resultWrapper">
+      <p id="results" class="result">Round result</p>
+    </div>
+    <div class="score">
+      <h3>Score</h3>
+      <p id="playerScore">0</p>
+      <p id="computerScoreCount">0</p>
+    </div>
+    <div class="endText">
       <p id="congrats"></p>
       <p id="maybe"></p>
     </div>
-    <button id="reset">Reset score</button>
-    <div class="wave wave-btm">
-      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-        <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #85A67C;"></path>
-      </svg>
+    <div class="resetBtn">
+      <button id="reset" class="reset">Reset score</button>
     </div>
   </div>
-  
   <script src="assets/script.js"></script>
 </body>
 </html>
