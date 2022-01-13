@@ -16,7 +16,7 @@ December 6, 2017
 
 # View on browser
 
-## [https://n00bg1rl.github.io/rps/](https://n00bg1rl.github.io/rps/)
+## [https://n00bg1rl.github.io/Rock-Paper-Scissors/](https://n00bg1rl.github.io/Rock-Paper-Scissors/)
 
 # View as image
 
